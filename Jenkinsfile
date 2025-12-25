@@ -15,6 +15,7 @@ pipeline {
         stage('Compliance Check') {
             steps {
                 // We are calling the file 'finTechAudit.groovy' as a function!
+                helloWorld()
                 script {
                     finTechAudit("Payment-Gateway-API at rakesh", "HIGH")
                 }
